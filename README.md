@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+#Features
+Responsive Navbar: Always-visible navigation with brand logo, search bar, categories dropdown, wishlist, and cart icons.
+Product Listing: Display products in a grid layout with images, titles, ratings, prices, and action buttons.
+Search Functionality: Real-time product search to help users find items quickly.
+Categories Filter: Dropdown menu to filter products based on selected categories.
+Wishlist Management: Add or remove products from the wishlist with visual indicators.
+Cart Management: Add products to the cart, view cart items, and manage quantities.
+Product Details Modal: Click on a product to view detailed information in a modal with additional images and descriptions.
+Smooth Animations: Enhanced user experience with animations using Framer Motion.
+Toast Notifications: Instant feedback using React Toastify for actions like adding to cart or wishlist.
+Optimized for Mobile and Desktop: Ensures a consistent and pleasant experience across all devices.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#Technologies Used
+The project leverages a combination of modern web technologies and libraries to deliver a robust and efficient e-commerce platform:
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+React: Frontend library for building user interfaces.
+React Bootstrap: UI framework for responsive design and pre-built components.
+React Icons: Icon library for incorporating scalable icons.
+Framer Motion: Animation library for smooth and interactive animations.
+React Toastify: Library for elegant toast notifications.
+Git & GitHub: Version control and repository hosting.
+ESLint & Prettier: Code linting and formatting tools for maintaining code quality.
