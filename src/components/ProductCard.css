@@ -1,0 +1,191 @@
+/* src/components/ProductCard.css */
+
+/* Wrapper for Framer Motion */
+.product-card-wrapper {
+  position: relative;
+}
+
+/* Card Container */
+.product-card {
+  background: #ffffff;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Image */
+.product-image {
+  height: 250px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.05);
+}
+
+/* Wishlist Button */
+.wishlist-button {
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  padding: 0.25rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.wishlist-button:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: scale(1.2);
+}
+
+/* Overlay Styling */
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.product-card:hover .card-overlay {
+  pointer-events: all;
+  opacity: 1;
+}
+
+/* View Details Button */
+.view-details-button {
+  background: #ffffff;
+  color: #2575fc;
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.view-details-button:hover {
+  background: #2575fc;
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+/* View Details Button for Mobile */
+.view-details-button-mobile {
+  display: none; /* Hidden by default */
+  background: #ffffff;
+  color: #2575fc;
+  border: 1px solid #2575fc;
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.view-details-button-mobile:hover {
+  background: #2575fc;
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+/* Card Body */
+.product-card .card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.product-card .card-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 0.5rem;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-size: 1.2rem;
+  color: #ff7e5f;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Add to Cart Button */
+.add-to-cart-btn {
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  border: none;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border-radius: 50px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.add-to-cart-btn:hover {
+  background: linear-gradient(45deg, #2575fc, #6a11cb);
+  transform: translateY(-3px);
+}
+
+/* Badge Styling */
+.badge-count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  font-size: 0.7rem;
+  padding: 0.25em 0.4em;
+  background-color: #ffdd57;
+  color: #1f4037;
+  border-radius: 50%;
+}
+
+/* Responsive Design */
+
+/* Show "View Details" button on Mobile */
+@media (max-width: 576px) {
+  .view-details-button-mobile {
+    display: flex; /* Visible on mobile */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .card-overlay {
+    display: none; /* Hide overlay on mobile */
+  }
+
+  .product-image {
+    height: 200px;
+  }
+
+  .product-card {
+    border-radius: 10px;
+  }
+
+  .card-overlay {
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  .badge-count {
+    top: -5px;
+    right: -5px;
+  }
+}

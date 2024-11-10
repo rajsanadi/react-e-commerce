@@ -1,0 +1,44 @@
+/* src/components/CartSidebar.css */
+
+/* Cart Sidebar Styling */
+.cart-sidebar .offcanvas {
+    background: #f8f9fa;
+  }
+  
+  .cart-sidebar .offcanvas-header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+  }
+  
+  .cart-sidebar .offcanvas-title {
+    font-size: 1.5rem;
+  }
+  
+  .cart-sidebar .offcanvas-body {
+    padding: 1rem;
+  }
+  
+  /* List Group Item */
+  .cart-sidebar .list-group-item {
+    border: none;
+    padding: 0.5rem 0;
+  }
+  
+  /* Quantity Controls */
+  .cart-sidebar .d-flex .btn-secondary {
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .cart-sidebar .d-flex .btn-danger {
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .cart-sidebar .product-details h6,
+  .cart-sidebar .product-details p {
+    margin-bottom: 0.25rem;
+  }
+  
+  .cart-sidebar .product-details .d-flex {
+    align-items: center;
+  }
+  

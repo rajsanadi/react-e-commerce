@@ -1,0 +1,172 @@
+/* src/components/Navbar.css */
+
+/* Navbar Background */
+.custom-navbar {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  padding: 0.5rem 1rem;
+}
+
+/* Navbar Container */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Brand Name Styling */
+.brand-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Search Bar Styling */
+.search-bar {
+  flex: 1 1 300px;
+  max-width: 500px;
+}
+
+.custom-navbar .form-control {
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: #ffffff;
+  transition: background 0.3s ease;
+}
+
+.custom-navbar .form-control::placeholder {
+  color: #e0e0e0;
+  font-style: italic;
+}
+
+.custom-navbar .form-control:focus {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: none;
+}
+
+/* Search Button Styling */
+.search-button {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.search-button:hover {
+  color: #ffd700;
+}
+
+/* Nav Links Styling */
+.nav-items {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  color: #ffffff !important;
+  font-weight: bold;
+  margin-left: 1rem;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.nav-item:hover {
+  color: #ffdd57 !important;
+}
+
+.nav-item svg {
+  margin-right: 0.3rem;
+}
+
+/* Badge Styling */
+.badge-count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  font-size: 0.7rem;
+  padding: 0.25em 0.4em;
+  background-color: #ffdd57;
+  color: #1f4037;
+  border-radius: 50%;
+}
+
+/* Categories Dropdown Styling */
+#categoriesDropdown .dropdown-menu {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+#categoriesDropdown .dropdown-item {
+  color: #333333;
+  transition: background-color 0.2s ease;
+}
+
+#categoriesDropdown .dropdown-item:hover,
+#categoriesDropdown .dropdown-item.active {
+  background-color: #f0f0f0;
+  color: #2575fc;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  /* Adjust search bar on medium screens */
+  .search-bar {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  /* Adjust nav items alignment */
+  .nav-items {
+    flex: 1 1 100%;
+    justify-content: flex-end;
+    margin-top: 0.5rem;
+  }
+
+  .nav-item {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Stack elements vertically on small screens */
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-items {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .nav-item {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+
+  /* Reduce padding for smaller screens */
+  .custom-navbar {
+    padding: 0.3rem 0.5rem;
+  }
+
+  .brand-name {
+    font-size: 1.3rem;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .badge-count {
+    top: -5px;
+    right: -5px;
+  }
+}

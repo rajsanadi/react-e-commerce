@@ -1,0 +1,128 @@
+/* src/components/PaymentModal/PaymentModal.css */
+
+/* Payment Modal Styling */
+.payment-modal .modal-content {
+    border-radius: 20px;
+    padding: 20px;
+    background: linear-gradient(135deg, #1f4037 0%, #99f2c8 100%); /* Adjust gradient as per your UI */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    font-family: 'Arial', sans-serif; /* Change to your site's font */
+  }
+  
+  .payment-modal .modal-header {
+    border-bottom: none;
+  }
+  
+  .payment-modal .modal-title {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .payment-modal .modal-body {
+    color: #ffffff;
+  }
+  
+  .payment-modal .form-control {
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .payment-modal .form-control::placeholder {
+    color: #e0e0e0;
+    font-style: italic;
+  }
+  
+  .payment-modal .form-control:focus {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: none;
+  }
+  
+  .payment-modal .btn-primary {
+    background: #ffffff;
+    color: #1f4037;
+    border: none;
+    border-radius: 50px;
+    padding: 0.6rem;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .payment-modal .btn-primary:hover {
+    background: #e0e0e0;
+    color: #1f4037;
+  }
+  
+  .payment-modal .btn-success {
+    background: #4BB543;
+    border: none;
+    border-radius: 50px;
+    padding: 0.6rem 1.2rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .payment-modal .btn-success:hover {
+    background: #3da038;
+  }
+  
+  .payment-modal .fireworks-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    overflow: hidden;
+  }
+  
+  .payment-modal .success-container h4 {
+    font-size: 1.8rem;
+    color: #ffffff;
+  }
+  
+  .payment-modal .success-container .btn-success {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  .payment-modal .pay-button {
+    background: #ffffff;
+    color: #1f4037;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+  }
+  
+  .payment-modal .pay-button:hover {
+    background: #e0e0e0;
+    color: #1f4037;
+  }
+  
+  /* Fireworks Container Styling */
+  .fireworks-container canvas {
+    width: 100% !important;
+    height: 200px !important;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 576px) {
+    .payment-modal .modal-content {
+      padding: 15px;
+    }
+  
+    .payment-modal .modal-title {
+      font-size: 1.2rem;
+    }
+  
+    .payment-modal .success-container h4 {
+      font-size: 1.5rem;
+    }
+  
+    .payment-modal .fireworks-container {
+      height: 150px;
+    }
+  }
+  

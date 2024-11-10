@@ -1,0 +1,67 @@
+/* src/components/ProductDetailModal/ProductDetailModal.css */
+
+/* Modal Content Container */
+.modal-content-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.product-image-container {
+  flex: 1;
+}
+
+.product-image {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.product-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-price {
+  font-size: 1.5rem;
+  color: #ff7e5f;
+  font-weight: bold;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+}
+
+.modal-action-buttons {
+  margin-top: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .modal-content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-image {
+    height: 250px;
+  }
+
+  .product-details {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-content-container {
+    gap: 1rem;
+  }
+
+  .product-image {
+    height: 200px;
+  }
+}
