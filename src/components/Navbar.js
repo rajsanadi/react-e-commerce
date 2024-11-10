@@ -48,7 +48,7 @@ const AppNavbar = ({
               points="325.28,52.496 451.744,180.664 325.28,308.816 203.936,308.816 330.608,180.664 203.936,52.496"
             ></polygon>
           </svg>
-          <span className="brand-name">Shopifyyy</span>
+          <span className="brand-name">Shopify</span>
         </Navbar.Brand>
 
        
